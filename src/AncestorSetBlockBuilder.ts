@@ -6,7 +6,7 @@ import { addAll, deleteAll, mustGet } from './collections';
 type CompareFunc<T extends Tx> = (a: AncestorSet<T>, b: AncestorSet<T>) => number;
 
 const compareAggFeeRate: CompareFunc<Tx> = (a, b) => b.withAncestors.aggFeeRate - a.withAncestors.aggFeeRate;
-const compareAggFee: CompareFunc<Tx> = (a, b) => b.withAncestors.aggFee - a.withAncestors.aggFee;
+const compareAggWeight: CompareFunc<Tx> = (a, b) => b.withAncestors.aggWeight - a.withAncestors.aggWeight;
 const compareRepTxid: CompareFunc<Tx> = (a, b) => a.tx.id.localeCompare(b.tx.id);
 
 const MAX_CONSECUTIVE_FAILURES = 1000;
@@ -39,7 +39,7 @@ export class ChainCompare {
 }
 
 export const compareFeeRate = new ChainCompare(compareAggFeeRate, compareRepTxid);
-export const compareFeeRateAndFee = new ChainCompare(compareAggFeeRate, compareAggFee, compareRepTxid);
+export const compareFeeRateAndWeight = new ChainCompare(compareAggFeeRate, compareAggWeight, compareRepTxid);
 
 export type AncestorSet<T extends Tx> = {
   tx: T;
@@ -60,7 +60,7 @@ export class AncestorSetBlockBuilder<T extends Tx> {
 
   byHighestAncestorSetFeeRate: Heap<T>;
 
-  constructor(public graph: TxGraph<T>, public compare = compareFeeRateAndFee, heapArray?: T[]) {
+  constructor(public graph: TxGraph<T>, public compare = compareFeeRateAndWeight, heapArray?: T[]) {
     this.byHighestAncestorSetFeeRate = this.createHeap(heapArray);
   }
 
