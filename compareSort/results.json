@@ -1,5 +1,213 @@
 [
   [
+    "compareSort/mempool-txt-dumps/497672_000000000000000000d06ebf411fe5c8367e2659043572b726d9a197f395276c.mempool",
+    {
+      "diff": [
+        {
+          "limit": 3770000,
+          "remaining": [
+            88,
+            373
+          ],
+          "feeDiff": 982
+        },
+        {
+          "limit": 3930000,
+          "remaining": [
+            4,
+            132
+          ],
+          "feeDiff": 452
+        },
+        {
+          "limit": 3950000,
+          "remaining": [
+            124,
+            231
+          ],
+          "feeDiff": 414
+        },
+        {
+          "limit": 3960000,
+          "remaining": [
+            268,
+            140
+          ],
+          "feeDiff": -452
+        },
+        {
+          "limit": 3970000,
+          "remaining": [
+            364,
+            492
+          ],
+          "feeDiff": 452
+        },
+        {
+          "limit": 3980000,
+          "remaining": [
+            380,
+            231
+          ],
+          "feeDiff": -490
+        },
+        {
+          "limit": 3990000,
+          "remaining": [
+            140,
+            524
+          ],
+          "feeDiff": 1356
+        },
+        {
+          "limit": 4020000,
+          "remaining": [
+            95,
+            244
+          ],
+          "feeDiff": 490
+        },
+        {
+          "limit": 4030000,
+          "remaining": [
+            111,
+            516
+          ],
+          "feeDiff": 1394
+        },
+        {
+          "limit": 4050000,
+          "remaining": [
+            223,
+            244
+          ],
+          "feeDiff": 38
+        },
+        {
+          "limit": 4060000,
+          "remaining": [
+            388,
+            4
+          ],
+          "feeDiff": -1356
+        },
+        {
+          "limit": 4070000,
+          "remaining": [
+            404,
+            532
+          ],
+          "feeDiff": 452
+        },
+        {
+          "limit": 4300000,
+          "remaining": [
+            132,
+            260
+          ],
+          "feeDiff": 452
+        },
+        {
+          "limit": 4310000,
+          "remaining": [
+            148,
+            532
+          ],
+          "feeDiff": 1356
+        },
+        {
+          "limit": 4320000,
+          "remaining": [
+            143,
+            292
+          ],
+          "feeDiff": 490
+        },
+        {
+          "limit": 4330000,
+          "remaining": [
+            260,
+            516
+          ],
+          "feeDiff": 904
+        },
+        {
+          "limit": 4340000,
+          "remaining": [
+            404,
+            276
+          ],
+          "feeDiff": -452
+        },
+        {
+          "limit": 4350000,
+          "remaining": [
+            420,
+            36
+          ],
+          "feeDiff": -1356
+        },
+        {
+          "limit": 4750000,
+          "remaining": [
+            108,
+            236
+          ],
+          "feeDiff": 448
+        },
+        {
+          "limit": 4780000,
+          "remaining": [
+            179,
+            56
+          ],
+          "feeDiff": -450
+        },
+        {
+          "limit": 4790000,
+          "remaining": [
+            107,
+            424
+          ],
+          "feeDiff": 1090
+        },
+        {
+          "limit": 4800000,
+          "remaining": [
+            163,
+            259
+          ],
+          "feeDiff": 336
+        },
+        {
+          "limit": 4810000,
+          "remaining": [
+            219,
+            315
+          ],
+          "feeDiff": 336
+        },
+        {
+          "limit": 4820000,
+          "remaining": [
+            275,
+            184
+          ],
+          "feeDiff": -338
+        },
+        {
+          "limit": 4830000,
+          "remaining": [
+            331,
+            19
+          ],
+          "feeDiff": -1092
+        }
+      ],
+      "avgDiff": 27.28
+    }
+  ],
+  [
     "compareSort/mempool-txt-dumps/628405_0000000000000000000c0278bd96ca7aa26b87627927218609ee97d5aeae51c2.mempool",
     {
       "diff": [
@@ -61,6 +269,54 @@
         }
       ],
       "avgDiff": -23.41
+    }
+  ],
+  [
+    "compareSort/mempool-txt-dumps/628480_000000000000000000006e331a858b73fd3e53fcb9c1a90e29c8d4b94b751682.mempool",
+    {
+      "diff": [
+        {
+          "limit": 3410000,
+          "remaining": [
+            133,
+            421
+          ],
+          "feeDiff": 7272
+        },
+        {
+          "limit": 3480000,
+          "remaining": [
+            30,
+            39
+          ],
+          "feeDiff": 81
+        },
+        {
+          "limit": 3600000,
+          "remaining": [
+            213,
+            217
+          ],
+          "feeDiff": 100
+        },
+        {
+          "limit": 4190000,
+          "remaining": [
+            320,
+            23
+          ],
+          "feeDiff": -6865
+        },
+        {
+          "limit": 4440000,
+          "remaining": [
+            257,
+            76
+          ],
+          "feeDiff": -3699
+        }
+      ],
+      "avgDiff": -15.555
     }
   ],
   [
@@ -1340,6 +1596,54 @@
         }
       ],
       "avgDiff": 910.695
+    }
+  ],
+  [
+    "compareSort/mempool-txt-dumps/632696_00000000000000000006c493a793ac58b6df96d714f6cb01215a0430d7f319fb.mempool",
+    {
+      "diff": [
+        {
+          "limit": 3160000,
+          "remaining": [
+            203,
+            189
+          ],
+          "feeDiff": -7
+        },
+        {
+          "limit": 3170000,
+          "remaining": [
+            371,
+            383
+          ],
+          "feeDiff": 9
+        },
+        {
+          "limit": 3180000,
+          "remaining": [
+            221,
+            49
+          ],
+          "feeDiff": -126
+        },
+        {
+          "limit": 3190000,
+          "remaining": [
+            47,
+            175
+          ],
+          "feeDiff": 96
+        },
+        {
+          "limit": 3200000,
+          "remaining": [
+            43,
+            213
+          ],
+          "feeDiff": 131
+        }
+      ],
+      "avgDiff": 0.515
     }
   ]
 ]

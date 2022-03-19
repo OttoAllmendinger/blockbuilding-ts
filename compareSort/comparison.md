@@ -27,13 +27,16 @@ This allows us to determine the average fee improvement of the new tiebreaker fo
 
 | Mempool Snapshot (Blockheight) | Size (Mwu) |  Average Fee Improvement (Satoshi) |
 |--------------------------------|-----------:|-----------------------------------------:|
+|497672|333|27.28|
 |628405|41|-23.41|
+|628480|35|-15.55|
 |629400|96|95.65|
 |629401|99|37.34|
 |629402|96|48.57|
 |629928|16|0.00|
 |631705|232|5.99|
 |632671|14|910.70|
+|632696|30|0.52|
 
 ## Code, Raw Data
 

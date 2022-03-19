@@ -105,21 +105,16 @@ async function readMempoolFromPath(path: string): Promise<Map<string, Tx>> {
 
 const resultFile = 'compareSort/results.json';
 
-const files = [
-  'compareSort/mempool-txt-dumps/628405_0000000000000000000c0278bd96ca7aa26b87627927218609ee97d5aeae51c2.mempool',
-  'compareSort/mempool-txt-dumps/628990_000000000000000000105a471c5bce6bad105b1b3d82d8a603fd9ecb98cd96f7.mempool',
-  'compareSort/mempool-txt-dumps/628999_0000000000000000000a7aa1446229edf9366bf109b85cba341348bfce7ea303.mempool',
-  'compareSort/mempool-txt-dumps/629400_0000000000000000000ec5ef76e064d37ae265b7c404b45a85726d57299880e4.mempool',
-  'compareSort/mempool-txt-dumps/629401_0000000000000000000df65ff4f7020320585d4cbf33481361c593735651e543.mempool',
-  'compareSort/mempool-txt-dumps/629402_00000000000000000005b6894309962cf7cfe28c859d048ff69e06fa7ae1e0d6.mempool',
-  'compareSort/mempool-txt-dumps/629928_000000000000000000003ce46c7819167d51f9bc78a3c84d08a27c0e65ab2941.mempool',
-  'compareSort/mempool-txt-dumps/631705_0000000000000000000d5e0f4b47f478b3315c6d65a275252e57385a201cfe13.mempool',
-  'compareSort/mempool-txt-dumps/632671_0000000000000000000096add0ef66a690491b69af054e87c7c82889e2ff551e.mempool',
-];
+async function getFiles(): Promise<string[]> {
+  const prefix = 'compareSort/mempool-txt-dumps';
+  return (await fs.readdir(prefix)).map((p) => `${prefix}/${p}`);
+}
 
 async function getAllMempools(minSize: number): Promise<[string, Map<string, Tx>][]> {
   return (
-    await Promise.all(files.map(async (p) => [p, await readMempoolFromPath(p)] as [string, Map<string, Tx>]))
+    await Promise.all(
+      (await getFiles()).map(async (p) => [p, await readMempoolFromPath(p)] as [string, Map<string, Tx>])
+    )
   ).filter(([, pool]) => getAggSize(pool) > minSize);
 }
 
